@@ -1,0 +1,21 @@
+
+body {
+  
+  background-image: url("images/bookmark_bg.png");
+  background-attachment: fixed;
+  margin: auto;
+  padding: auto;
+}
+
+ul {
+  background-color: rgba(62,76,90,0.22);
+  color: white;
+  font-family:  'Montserrat', sans-serif;
+}
+
+a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+}
