@@ -1,9 +1,17 @@
+
+    <form>
+     <input type = 'text' />  
+     <button> Search </button> 
+    </form>
+
 <a href='/bookmarks/new'> New Bookmark </a>
 
 <ul>
   <% @bookmarks.each do |bookmark| %>
     <li>
-      <%= bookmark.url %>
+      <%= bookmark.url %> 
+      <%= bookmark.genre %> 
+      <%= bookmark.about %> 
       <a href='/bookmarks/<%=bookmark.id%>/edit'> Edit </a>
       <form action='/bookmarks/<%=bookmark.id%>/delete' method = 'post' >
       <button> Delete </button>
