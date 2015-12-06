@@ -1,3 +1,10 @@
+h1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+}
 
 body {
   
@@ -5,10 +12,11 @@ body {
   background-attachment: fixed;
   margin: auto;
   padding: auto;
+
 }
 
 ul {
-  background-color: rgba(62,76,90,0.22);
+  background-color: rgba(62,76,90,0.1);
   color: white;
   font-family:  'Montserrat', sans-serif;
 }
@@ -19,3 +27,27 @@ a {
   font-weight: 700;
 
 }
+
+label {
+  color: white; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+}
+
+button {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+}
+
+
+
+

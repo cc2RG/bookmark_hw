@@ -3,13 +3,16 @@
      <input type = 'text' />  
      <button> Search </button> 
     </form>
+<hr>
+<form action='/bookmarks/new' method = 'gets'>
+<button> + </button>
+</form>
 
-<a href='/bookmarks/new'> New Bookmark </a>
 
 <ul>
   <% @bookmarks.each do |bookmark| %>
     <li>
-      <%= bookmark.url %>
+     <a href=' http://<%= bookmark.url %>'> <%= bookmark.url %></a>
     </li>
     <li>  
       <%= bookmark.genre %> 
@@ -17,7 +20,9 @@
      <li>
       <%= bookmark.about %> 
      </li> 
-      <a href='/bookmarks/<%=bookmark.id%>/edit'> Edit </a>
+      <form action='/bookmarks/<%=bookmark.id%>/edit' method = 'gets'> 
+        <button> Edit </button>
+      </form>
       <form action='/bookmarks/<%=bookmark.id%>/delete' method = 'post' >
       <button> Delete </button>
       </form>
